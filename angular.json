@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "media-downloader"
+  "defaultProject": "media-downloader",
+  "cli": {
+    "analytics": "3d7911df-3743-496b-843d-cd549c42d1f9"
+  }
 }
