@@ -6,8 +6,8 @@ let mainWindow
 
 function createWindow () {
   mainWindow = new BrowserWindow({
-    width: 800,
-    height: 600,
+    width: 1600,
+    height: 900,
     webPreferences: {
       nodeIntegration: true
     }
@@ -17,11 +17,12 @@ function createWindow () {
     url.format({
       pathname: path.join(__dirname, `/dist/media-downloader/index.html`),
       protocol: "file:",
-      slashes: true
+      slashes: true,
+      icon: path.join(__dirname, `/src/favicon.png`)
     })
   );
   // Open the DevTools.
-  mainWindow.webContents.openDevTools()
+ // mainWindow.webContents.openDevTools()
 
   mainWindow.on('closed', function () {
     mainWindow = null
